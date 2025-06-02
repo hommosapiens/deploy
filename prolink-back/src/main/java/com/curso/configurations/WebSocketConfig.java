@@ -27,7 +27,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws")
                 .addInterceptors(authHandshakeInterceptor)
-                .setAllowedOrigins("http://localhost:3000", "http://localhost:5173")
+                .setAllowedOrigins("http://localhost:3000", "http://localhost:5173","https://deploy-one-plum.vercel.app")
                 .withSockJS();
     }
 }
