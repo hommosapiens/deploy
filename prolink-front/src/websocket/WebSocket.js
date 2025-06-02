@@ -7,7 +7,7 @@ const webSocket = (onMessage, onDeleteMessage, endPoint) => {
 
     useEffect(() => {
         const token = sessionStorage.getItem('token');
-        const socket = new SockJS(`http://localhost:8080/ws?token=${token}`);
+        const socket = new SockJS(`https://deploy-dhsk.onrender.com/ws?token=${token}`);
 
         const client = new Client({
             webSocketFactory: () => socket,

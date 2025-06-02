@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080/sale";
+const BASE_URL = "https://deploy-dhsk.onrender.com/sale";
 
 export const getAllSales = async () => {
     const token = sessionStorage.getItem('token');

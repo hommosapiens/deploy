@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080/state";
+const BASE_URL = "https://deploy-dhsk.onrender.com/state";
 
 
 export const getAllStates = async () => {

@@ -55,7 +55,12 @@ public class SecurityConfig {
         http
                 .cors(cors -> cors.configurationSource(request -> {
                     var config = new org.springframework.web.cors.CorsConfiguration();
-                    config.setAllowedOrigins(List.of("http://localhost:3000", "http://localhost:5173"));
+                    config.setAllowedOrigins(
+                            List.of(
+                                    "http://localhost:3000",
+                                    "http://localhost:5173",
+                                    "https://deploy-olive-omega.vercel.app/"
+                            ));
                     config.addAllowedMethod("*");
                     config.addAllowedHeader("*");
                     config.setAllowCredentials(true);
