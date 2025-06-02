@@ -7,7 +7,7 @@ const webSocket = (onMessage, onDeleteMessage, endPoint) => {
 
     useEffect(() => {
         const token = sessionStorage.getItem('token');
-        const socket = new SockJS(`https://deploy-one-plum.vercel.app/ws?token=${token}`);
+        const socket = new SockJS(`https://deploy-dhsk.onrender.com/ws?token=${token}`);
 
         const client = new Client({
             webSocketFactory: () => socket,
