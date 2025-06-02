@@ -1,4 +1,4 @@
-const BASE_URL = "https://deploy-dhsk.onrender.com/product";
+const BASE_URL = "https://deploy-one-plum.vercel.app/product";
 
 export const getAllProducts = async () => {
     const token = sessionStorage.getItem('token');

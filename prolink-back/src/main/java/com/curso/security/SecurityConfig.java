@@ -59,7 +59,7 @@ public class SecurityConfig {
                             List.of(
                                     "http://localhost:3000",
                                     "http://localhost:5173",
-                                    "https://deploy-olive-omega.vercel.app/"
+                                    "https://deploy-one-plum.vercel.app"
                             ));
                     config.addAllowedMethod("*");
                     config.addAllowedHeader("*");

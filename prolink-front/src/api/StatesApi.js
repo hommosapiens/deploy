@@ -1,4 +1,4 @@
-const BASE_URL = "https://deploy-dhsk.onrender.com/state";
+const BASE_URL = "https://deploy-one-plum.vercel.app/state";
 
 
 export const getAllStates = async () => {
