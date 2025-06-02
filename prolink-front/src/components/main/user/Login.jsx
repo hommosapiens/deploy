@@ -19,6 +19,8 @@ function Login() {
                 body: JSON.stringify({username, password})
             });
 
+
+            
             if (!response.ok) throw new Error('Usuario o contraseña incorrectos');
 
             const data = await response.json();
